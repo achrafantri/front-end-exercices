@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-1.11.3.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#augP").click(function(){
+    	var tailleActuelle = parseInt($('#panel').css("font-size"));
+		$('#panel').css("font-size", tailleActuelle+10);
+     });
+
+     $("#dimP").click(function(){
+       var tailleActuelle = parseInt($('#panel').css("font-size"));
+		$('#panel').css("font-size", tailleActuelle-10);
+      });
+
+
+
+
+
+      $("#vif").click(function(){
+     	$('#panel').removeClass('sombre');   
+		$('#panel').addClass('vif');
+      });
+
+
+      $("#sombre").click(function(){
+ 		$('#panel').addClass('sombre');
+      });
+	  
+	   $("#cach").click(function(){
+     	 $('#panel').toggle();     
+		 
+      });
+	  
+	  
+	  
+});
+</script>
+ 
+<style> 
+
+#flip {
+ background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    text-align: center;
+    padding: 3px;
+}
+#panel {
+    padding: 50px;
+}
+.vif{
+	background-color: #ff0000;
+    border: solid 3px yellow;
+    color:yellow;
+}
+.sombre{
+	background-color: #aeaeae;
+    border: solid 3px green;
+    color:black;
+   font-weight: bold;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">
+<button id="augP">A+</button>
+<button id="dimP">A-</button>
+<button id="vif">Style Vif</button>
+<button id="sombre">Style Sombre</button>
+<button id="cach">Cacher/afficher</button>
+ </div>
+<div id="panel" >La manipulation du code CSS en jQuery se fait de maniere rapide et efficace. En effet, il est possible d'acceder a toutes les proprietes existantes, et plus encore, comme recuperer des donnees stylisantes.
+
+</div>
+
+</body>
+</html>
