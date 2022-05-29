@@ -1,0 +1,25 @@
+body{color:black;
+	}
+/*
+	@page { size:2.0cm 14.85cm;
+        margin-top:1.7cm;
+        margin-bottom:1.4cm;
+        margin-left:2cm;
+        margin-right:2cm
+
+}
+*/
+ 
+	.chapitre{page-break-before:always;
+	border-bottom:medium gray solid;
+	font-size:30pt;
+	margin-bottom:5cm;}
+
+.titrelivre{page-break-after:always;
+text-align:left; 
+text-transform:capitalize;
+font-size:50pt; 
+border-bottom:double 10px #888888 ; border-top:solid 4px #888888 ;}
+
+p{font-family: Verdana; font-size:12pt;text-indent:1cm;}
+p:first-letter{font-size:200%; text-transform:uppercase;font-weight:bolder;}
